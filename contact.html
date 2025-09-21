@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact & Order — Smokie Kenya</title>
+    <meta
+      name="description"
+      content="Order smokie, mahindi choma & shawarma via WhatsApp or visit our locations in Nairobi CBD."
+    />
+    <link rel="icon" href="images/smocha.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/smocha.png" alt="Smokie Kenya logo" class="logo" />
+          <span class="brand-text">Smokie Kenya</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Contact & Order</h1>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 2rem">
+        Fill out the form below and we'll prepare your order for pickup, or
+        contact us directly on WhatsApp.
+      </p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Full Name *</label>
+        <input
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          placeholder="Enter your full name"
+          autocomplete="name"
+        />
+
+        <label for="phone">Phone Number (WhatsApp preferred) *</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          required
+          pattern="[0-9+\-() ]{7,20}"
+          placeholder="07XXXXXXXX or +254XXXXXXXXX"
+          autocomplete="tel"
+        />
+
+        <label for="message">Your Order / Message *</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          placeholder="Example: 2 smokies, 1 mahindi choma, 1 beef shawarma. Any special requests?"
+          minlength="3"
+        ></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Validate Order</button>
+          <a
+            id="waLink"
+            class="btn outline"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            >📱 Order on WhatsApp</a
+          >
+        </div>
+
+        <p id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+
+      <section class="location">
+        <h2>📍 Find Us Here</h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+          "
+        >
+          <div
+            style="
+              background: white;
+              padding: 1.5rem;
+              border-radius: 12px;
+              box-shadow: var(--shadow);
+            "
+          >
+            <h3 style="color: var(--primary); margin-bottom: 0.5rem">
+              📍 Tom Mboya Street
+            </h3>
+            <p class="muted">Near the main bus stop</p>
+            <p class="muted"><strong>Hours:</strong> 7:00 AM - 8:00 PM</p>
+          </div>
+
+          <div
+            style="
+              background: white;
+              padding: 1.5rem;
+              border-radius: 12px;
+              box-shadow: var(--shadow);
+            "
+          >
+            <h3 style="color: var(--primary); margin-bottom: 0.5rem">
+              📍 Haile Selassie Avenue
+            </h3>
+            <p class="muted">Evening spot (4:00 PM onwards)</p>
+            <p class="muted"><strong>Hours:</strong> 4:00 PM - 9:00 PM</p>
+          </div>
+        </div>
+
+        <div
+          style="
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+          "
+        >
+          <h3 style="color: var(--primary); margin-bottom: 1rem">
+            💬 Direct Contact
+          </h3>
+          <p class="muted">For immediate orders or questions:</p>
+          <a
+            href="https://wa.me/254719160307"
+            class="btn primary"
+            style="margin-top: 1rem"
+            target="_blank"
+            rel="noopener"
+          >
+            📱 WhatsApp: +254 719160307
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Smokie Kenya</strong>
+          <p>Quick orders, fresh food</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <small>© <span id="year"></span> Smokie Kenya</small>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

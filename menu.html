@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Smokie Kenya</title>
+  <meta name="description" content="Full menu of smokies, mahindi choma, shawarma and more street food favorites with prices.">
+  <link rel="icon" href="images/smocha.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/smocha.png" alt="Smokie Kenya logo" class="logo">
+        <span class="brand-text">Smokie Kenya</span>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <h1>Our Full Menu</h1>
+
+    <!-- Filter buttons -->
+    <div class="filters">
+      <button class="chip active" data-filter="all">All Items</button>
+      <button class="chip" data-filter="wraps">Wraps & Rolls</button>
+      <button class="chip" data-filter="snacks">Quick Snacks</button>
+      <button class="chip" data-filter="grill">Grilled Specials</button>
+    </div>
+
+    <!-- Menu Cards -->
+    <div id="menuCards" class="cards">
+      <article class="card" data-category="wraps">
+        <img src="images/shawarma.png" alt="Beef shawarma wrap">
+        <h3>Beef Shawarma</h3>
+        <p class="price">KES 250</p>
+        <p class="muted">Marinated beef strips with fresh salad, pickles and garlic sauce in warm pita bread.</p>
+      </article>
+
+      <article class="card" data-category="wraps">
+        <img src="images/shawarma.png" alt="Chicken shawarma wrap">
+        <h3>Chicken Shawarma</h3>
+        <p class="price">KES 230</p>
+        <p class="muted">Tender chicken with lettuce, tomatoes, onions and our signature tahini sauce.</p>
+      </article>
+
+      <article class="card" data-category="snacks">
+        <img src="images/Smokie-Pasua.png" alt="Classic smokie">
+        <h3>Classic Smokie</h3>
+        <p class="price">KES 30</p>
+        <p class="muted">Grilled smokie with fresh kachumbari and chilli sauce.</p>
+      </article>
+
+      <article class="card" data-category="snacks">
+        <img src="images/Smokie-Pasua.png" alt="Smokie with egg">
+        <h3>Smokie & Egg (Mayai)</h3>
+        <p class="price">KES 120</p>
+        <p class="muted">Smokie fried with scrambled egg, served in a soft roll with sauce.</p>
+      </article>
+
+      <article class="card" data-category="grill">
+        <img src="images/mahindi-choma.png" alt="Charcoal roasted maize">
+        <h3>Mahindi Choma</h3>
+        <p class="price">KES 40</p>
+        <p class="muted">Traditional charcoal-roasted maize with butter, lemon and spices.</p>
+      </article>
+
+      <article class="card" data-category="snacks">
+        <img src="images/chapo 2.png" alt="Smokie pasua">
+        <h3>Smokie Pasua</h3>
+        <p class="price">KES 35</p>
+        <p class="muted">Split smokie filled with kachumbari, avocado and hot sauce.</p>
+      </article>
+
+      <article class="card" data-category="wraps">
+        <img src="images/smocha.png" alt="Chapati wrap">
+        <h3>Beef Chapati Roll</h3>
+        <p class="price">KES 180</p>
+        <p class="muted">Spiced beef strips wrapped in fresh chapati with vegetables.</p>
+      </article>
+
+      <article class="card" data-category="grill">
+        <img src="images/nyamachoma.png" alt="Grilled meat">
+        <h3>Nyama Choma (Small)</h3>
+        <p class="price">KES 300</p>
+        <p class="muted">Grilled beef served with ugali and kachumbari.</p>
+      </article>
+
+      <!-- Additional Wraps & Rolls -->
+      <article class="card" data-category="wraps">
+        <img src="images/smocha.png" alt="Rolex wrap">
+        <h3>Rolex (Chapati & Egg)</h3>
+        <p class="price">KES 80</p>
+        <p class="muted">Popular Ugandan-style chapati rolled with scrambled eggs and vegetables.</p>
+      </article>
+
+      <article class="card" data-category="wraps">
+        <img src="images/shawarma.png" alt="Chicken chapati roll">
+        <h3>Chicken Chapati Roll</h3>
+        <p class="price">KES 200</p>
+        <p class="muted">Grilled chicken strips with onions and spices wrapped in soft chapati.</p>
+      </article>
+
+      <!-- Additional Quick Snacks -->
+      <article class="card" data-category="snacks">
+        <img src="images/samoasa.png" alt="Samosas">
+        <h3>Beef Samosas (3 pcs)</h3>
+        <p class="price">KES 60</p>
+        <p class="muted">Crispy triangular pastries filled with spiced minced beef and onions.</p>
+      </article>
+
+      <article class="card" data-category="snacks">
+        <img src="images/samosaveg.png" alt="Vegetable samosas">
+        <h3>Vegetable Samosas (3 pcs)</h3>
+        <p class="price">KES 45</p>
+        <p class="muted">Golden pastries stuffed with spiced potatoes, peas and carrots.</p>
+      </article>
+
+      <article class="card" data-category="snacks">
+        <img src="images/mandazi.png" alt="Mandazi">
+        <h3>Mandazi (4 pcs)</h3>
+        <p class="price">KES 40</p>
+        <p class="muted">Sweet, coconut-flavored doughnuts perfect with tea or coffee.</p>
+      </article>
+
+      <article class="card" data-category="snacks">
+        <img src="images/bhajia.png" alt="Bhajia">
+        <h3>Bhajia (Potato Fritters)</h3>
+        <p class="price">KES 50</p>
+        <p class="muted">Crispy potato slices in spiced gram flour batter, served with chutney.</p>
+      </article>
+
+      <!-- Additional Grilled Specials -->
+      <article class="card" data-category="grill">
+        <img src="images/mishikaki.png" alt="Mishkaki">
+        <h3>Mishkaki (Beef Skewers)</h3>
+        <p class="price">KES 150</p>
+        <p class="muted">Marinated beef cubes grilled on skewers, served with kachumbari.</p>
+      </article>
+
+      <article class="card" data-category="grill">
+        <img src="images/mishkaki.png" alt="Chicken mishkaki">
+        <h3>Chicken Mishkaki</h3>
+        <p class="price">KES 130</p>
+        <p class="muted">Tender chicken pieces marinated in spices and grilled to perfection.</p>
+      </article>
+
+      <article class="card" data-category="grill">
+        <img src="images/viazi.png" alt="Viazi kaanga">
+        <h3>Viazi Kaanga</h3>
+        <p class="price">KES 70</p>
+        <p class="muted">Deep-fried potato wedges seasoned with salt and spices.</p>
+      </article>
+
+      <article class="card" data-category="grill">
+        <img src="images/mutura.png" alt="Mutura">
+        <h3>Mutura (Blood Sausage)</h3>
+        <p class="price">KES 30</p>
+        <p class="muted">Traditional spiced blood sausage grilled over charcoal.</p>
+      </article>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <p class="muted" style="margin-bottom: 1rem;">Ready to order? Get in touch!</p>
+      <a href="contact.html" class="btn primary">Order Now</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Smokie Kenya</strong>
+        <p>Fresh street food daily</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <small>© <span id="year2"></span> Smokie Kenya</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
