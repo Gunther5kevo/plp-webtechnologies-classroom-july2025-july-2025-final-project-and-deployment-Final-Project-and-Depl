@@ -81,6 +81,7 @@ npx http-server
 
 ### **3. View Website**
 Navigate to `http://localhost:8000` in your browser.
+or to see our wbesite on production `https://smokie-pasua.netlify.app/`
 
 ## 📋 Menu Categories
 
